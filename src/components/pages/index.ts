@@ -1,0 +1,1 @@
+export {default as MainSection} from './home/main-section'

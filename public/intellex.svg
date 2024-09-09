@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="279.75241mm"
+   height="246.29402mm"
+   viewBox="0 0 279.75241 246.29402"
+   version="1.1"
+   id="svg1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient5"
+      >
+      <stop
+         style="stop-color:#031130;stop-opacity:1;"
+         offset="0"
+         id="stop4" />
+      <stop
+         style="stop-color:#031130;stop-opacity:0;"
+         offset="1"
+         id="stop5" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient5"
+       id="linearGradient197"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(9.5637107,0,0,9.5637107,-1840.1846,-274.13992)"
+       x1="220.34727"
+       y1="102.80728"
+       x2="208.94272"
+       y2="105.74202" />
+    <linearGradient
+       id="linearGradient129">
+      <stop
+         style="stop-color:#031130;stop-opacity:1;"
+         offset="0"
+         id="stop129" />
+      <stop
+         style="stop-color:#031130;stop-opacity:0;"
+         offset="1"
+         id="stop130" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient129"
+       id="linearGradient196"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(7.1453327,0,0,9.5637107,-1312.2661,-274.13992)"
+       x1="229.62671"
+       y1="82.88208"
+       x2="244.92946"
+       y2="79.989296" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(28.574999,-11.11249)">
+    <g
+       id="g202"
+       transform="translate(-186.65682,-479.74023)">
+      <path
+         id="path164-6"
+         style="font-size:133.333px;font-family:'JetBrains Mono NL';-inkscape-font-specification:'JetBrains Mono NL';white-space:pre;opacity:0.99;fill:url(#linearGradient197);stroke-width:2.9"
+         d="M 297.45162,518.51925 267.08654,709.48021 H 162.4707 l -4.38888,27.66653 h 118.35712 l 34.95757,-218.62749 z m 16.58917,0 -34.95705,218.62749 h 64.92834 l 4.38836,-27.66653 h -50.27187 l 30.36457,-190.96096 z"
+      <path
+         id="path163-7"
+         style="font-size:133.333px;font-family:'JetBrains Mono NL';-inkscape-font-specification:'JetBrains Mono NL';white-space:pre;opacity:0.99;fill:url(#linearGradient196);stroke-width:2.9"
+         d="m 250.79761,490.85273 -3.2768,27.66652 h 49.9308 13.94489 l 4.42298,-27.66652 z m 67.66616,0 -4.42299,27.66652 h 14.45235 106.06432 l 3.27681,-27.66652 z"
+      />
+    </g>
+  </g>
+</svg>
