@@ -7,9 +7,11 @@ import {
 } from "@/components";
 import {Menu} from "lucide-react";
 import Link from "next/link";
+type props = {
+    setOpen: (open: boolean) => void
+}
 
-
-export default function MenuDropdown() {
+export default function MenuDropdown({setOpen}:props) {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -17,15 +19,20 @@ export default function MenuDropdown() {
             </DropdownMenuTrigger>
             <DropdownMenuContent className="p-2">
                 <DropdownMenuGroup>
-                    <DropdownMenuItem>
-                        <Link href={"/offer"}>What We Can Offer</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                        <Link href={"/schedule"}>Book a Call Today</Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                        <Link href={'/connect'}>Get In Touch</Link>
-                    </DropdownMenuItem>
+                    {/*<Link href={"/offer"}>*/}
+                    {/*    <DropdownMenuItem>*/}
+                    {/*        What We Can Offer*/}
+                    {/*    </DropdownMenuItem>*/}
+                    {/*</Link>*/}
+                    {/*<Link href={"/schedule"}>*/}
+                    {/*    <DropdownMenuItem>*/}
+                    {/*        Book a Call Today*/}
+                    {/*    </DropdownMenuItem>*/}
+                    {/*</Link>*/}
+
+                        <DropdownMenuItem onClick={() => setOpen(true)}>
+                            Get In Touch
+                        </DropdownMenuItem>
                 </DropdownMenuGroup>
             </DropdownMenuContent>
         </DropdownMenu>

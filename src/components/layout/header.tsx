@@ -1,13 +1,16 @@
 
 type Props = {
     content?: JSX.Element,
-    heading: string
+    heading: string,
+    size?: textSize,
+    alignment?: alignment
 }
 
-export default function Header({content, heading}: Props) {
+export default function Header({content, heading, size = '7xl', alignment = 'center'}: Props) {
+
     return (
-        <div className={"h-[512px] flex flex-col items-center justify-around w-2/3"}>
-            <h1 className={"text-center text-7xl uppercase font-bold"}>{heading}</h1>
+        <div className={"h-[512px] flex flex-col items-center justify-around w-3/4"}>
+            <h1 className={`text-${size} text-${alignment} uppercase font-bold`}>{heading}</h1>
             {content}
         </div>
     )

@@ -2,91 +2,133 @@ import {Header} from "@/components";
 
 export default function Offer() {
     return (
-        <main>
-            <Header heading={'So what is it?'}/>
-            <div className="company-overview">
-                <h1>Custom Software Solutions for Your Business Needs</h1>
+        <main className={"flex min-h-screen flex-col items-center px-[10%] "}>
+            <Header size={'5xl'}
+                    heading={'Revolutionize Your Business with AI-Powered Internal Systems Built for YOUR Business'}
+                    alignment={'left'}/>
+            <div className="company-overview w-2/3">
+                <p className={'text-lg'}>At Intallex, the focus is on creating cutting-edge internal systems enhanced by
+                    artificial intelligence, designed to transform business operations and drive unprecedented
+                    efficiency.</p>
 
-                <p>At [Company Name], we specialize in delivering tailored software solutions that transform how
-                    businesses operate. Our expertise spans across various domains, ensuring we can meet the diverse
-                    needs of modern enterprises.</p>
-
-                <h2>Our Offerings</h2>
+                <h2 className={'text-2xl font-bold mt-8'}>Our Offerings</h2>
 
                 <div className="offerings">
-                    <div className="offering">
-                        <h3>1. E-commerce Solutions</h3>
-                        <p>We build robust, scalable e-commerce platforms that help you reach customers globally. From
-                            inventory management to secure payment processing, we&quot;ve got you covered.</p>
+                    <div className="offering mt-4">
+                        <h3 className={'text-xl'}>1. Enhanced Management Systems</h3>
+                        <p className={'text-lg'}>Create smarter, more accessible tools:
+                            <ul>
+                                <li><strong>Customer Relations:</strong> Predict customer behavior, automate personalized
+                                    interactions, and optimize sales processes.
+                                </li>
+                                <li><strong>Resource Planning:</strong> Streamline operations with inventory
+                                    management, smart resource allocation, and automated financial forecasting.
+                                </li>
+                                <li><strong>Cognitive Project Management:</strong> Utilize AI to optimize project
+                                    timelines, allocate resources efficiently, and predict potential roadblocks before
+                                    they occur.
+                                </li>
+                            </ul>
+                        </p>
                     </div>
 
-                    <div className="offering">
-                        <h3>2. In-House Software</h3>
-                        <p>Streamline your internal operations with custom-built software designed specifically for your
-                            workflow. Increase efficiency and reduce errors with tools that fit your processes
-                            perfectly.</p>
+                    <div className="offering mt-4">
+                        <h3 className={'text-xl'}>2. Smart Workflow Automation</h3>
+                        <p>Transform internal processes with AI-powered automation:
+                            <ul>
+                                <li><strong>Document Processing:</strong> Implement intelligent document understanding
+                                    to
+                                    automate data extraction and classification.
+                                </li>
+                                <li><strong>Task Prioritization:</strong> Let AI analyze workloads and prioritize tasks
+                                    based on importance, deadlines, and available resources.
+                                </li>
+                                <li><strong>Predictive Maintenance:</strong> For businesses with physical assets, AI can
+                                    predict when maintenance is needed, reducing downtime and costs.
+                                </li>
+                            </ul>
+                        </p>
                     </div>
 
-                    <div className="offering">
-                        <h3>3. Management Systems</h3>
-                        <p>Take control of your business with comprehensive management software. Whether it&quot;s CRM, ERP,
-                            or project management, we create systems that give you clear insights and powerful tools to
-                            manage your operations effectively.</p>
+                    <div className="offering mt-4">
+                        <h3 className={'text-xl'}>3. AI-Driven Analytics and Decision Support</h3>
+                        <p>Harness the power of data with advanced analytics:
+                            <ul>
+                                <li><strong>Predictive Analytics:</strong> Forecast trends, anticipate market changes,
+                                    and
+                                    make data-driven decisions with AI-powered insights.
+                                </li>
+                                <li><strong>Anomaly Detection:</strong> Identify unusual patterns in data that may
+                                    indicate
+                                    fraud, errors, or opportunities.
+                                </li>
+                                <li><strong>Natural Language Querying:</strong> Allow staff to interact with data using
+                                    conversational language, democratizing access to insights.
+                                </li>
+                            </ul>
+                        </p>
                     </div>
 
-                    <div className="offering">
-                        <h3>4. AI Solutions</h3>
-                        <p>Harness the power of artificial intelligence to gain a competitive edge. We develop AI-driven
-                            solutions for data analysis, predictive modeling, process automation, and whatever problem you need solved.</p>
+                    <div className="offering mt-4">
+                        <h3 className={'text-xl'}>4. Intelligent Knowledge Management</h3>
+                        <p>Create a smarter, more accessible knowledge base:
+                            <ul>
+                                <li><strong>AI-Powered Search:</strong> Implement advanced search capabilities that
+                                    understand context and intent, making information retrieval effortless.
+                                </li>
+                                <li><strong>Automated Knowledge Capture:</strong> Use AI to extract and organize
+                                    knowledge
+                                    from various sources, keeping your information up-to-date.
+                                </li>
+                                <li><strong>Personalized Learning:</strong> Provide employees with AI-curated learning
+                                    paths
+                                    based on their roles, skills, and goals.
+                                </li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
 
-                <h2>Our Process</h2>
+                <h2 className={'text-2xl font-bold mt-8'}>The Intallex Advantage</h2>
 
+                <p className={'text-lg'}>By choosing Intallex for AI-integrated internal systems, businesses gain:</p>
                 <ol className="process">
                     <li>
-                        <h3>Discovery & Consultation</h3>
-                        <p>We begin by thoroughly understanding your business, challenges, and objectives. Our experts
-                            work closely with you to define the scope and requirements of your project.</p>
+                        <h3 className={'text-xl'}>Tailored Solutions</h3>
+                        <p className={'text-lg'}>Each system is custom-built to address specific business challenges and
+                            objectives within your business.</p>
                     </li>
 
                     <li>
-                        <h3>Planning & Design</h3>
-                        <p>Based on the insights gathered, we create a detailed project plan and design the software
-                            architecture. We present wireframes and prototypes for your feedback to ensure we&quot;re aligned
-                            with your vision.</p>
+                        <h3 className={'text-xl'}>Seamless Integration</h3>
+                        <p className={'text-lg'}>AI capabilities are woven seamlessly into existing workflows and
+                            systems, ensuring smooth adoption. Existing systems can be integrated with our solutions
+                            effortlessly.</p>
                     </li>
 
                     <li>
-                        <h3>Development</h3>
-                        <p>Our skilled developers bring the design to life, using cutting-edge technologies and best
-                            practices. We follow an agile methodology, allowing for flexibility and continuous
-                            improvement throughout the development process.</p>
+                        <h3 className={'text-xl'}>Scalability</h3>
+                        <p className={'text-lg'}>Systems grow and evolve with the business, adapting to changing needs
+                            over time.</p>
                     </li>
 
                     <li>
-                        <h3>Quality Assurance</h3>
-                        <p>Rigorous testing is performed at every stage to ensure your software is robust, secure, and
-                            performs optimally. We conduct thorough user acceptance testing to guarantee the solution
-                            meets all requirements.</p>
+                        <h3 className={'text-xl'}>Continuous Improvement</h3>
+                        <p className={'text-lg'}>AI algorithms learn and improve over time, delivering increasing value
+                            and insights. Our systems are designed to evolve with your business.</p>
                     </li>
 
                     <li>
-                        <h3>Implementation & Training</h3>
-                        <p>We ensure a smooth deployment of your new software. Our team provides comprehensive training
-                            to your staff, ensuring they&quot;re comfortable and proficient with the new system.</p>
-                    </li>
-
-                    <li>
-                        <h3>Ongoing Support & Optimization</h3>
-                        <p>Our relationship doesn&quot;t end at launch. We provide dedicated ongoing support, regular
-                            updates, and continuous optimization to ensure your software evolves with your business
-                            needs.</p>
+                        <h3 className={'text-xl'}>Top of the Line Support</h3>
+                        <p className={'text-lg'}>Your systems will maintain to most up to date tools and technologies,
+                            ensuring optimal performance and reliability and will remain up to date with continuous
+                            updates and support.</p>
                     </li>
                 </ol>
 
-                <p>At [Company Name], we&quot;re not just building software; we&quot;re crafting solutions that drive your
-                    business forward. Let&quot;s transform your challenges into opportunities for growth and innovation.</p>
+                <p className={'text-xl font-bold'}>Transform internal operations, empower employees, and gain a
+                    competitive edge with Intallex&quot;s AI-integrated internal systems. The future of business
+                    efficiency and intelligence is here - let&quot;s build it together.</p>
             </div>
         </main>
     )
