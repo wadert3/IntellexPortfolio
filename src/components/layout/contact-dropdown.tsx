@@ -40,8 +40,10 @@ export default function ContactDropdown() {
                     {/*    <span>GitHub</span>*/}
                     {/*</DropdownMenuItem>*/}
                     <DropdownMenuItem>
-                        <Linkedin className="mr-2 h-4 w-4"/>
-                        <span>LinkedIn</span>
+                        <Link className="flex" href={'https://www.linkedin.com/in/intellex-web-apps/'}>
+                            <Linkedin className="mr-2 h-4 w-4"/>
+                            <span>LinkedIn</span>
+                        </Link>
                     </DropdownMenuItem>
                 </DropdownMenuGroup>
             </DropdownMenuContent>
