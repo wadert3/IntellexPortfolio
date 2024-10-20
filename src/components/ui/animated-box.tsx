@@ -32,7 +32,7 @@ export default function AnimatedBox({header, description, fullWidth = false}:Pro
             viewport={{once: true}}
         >
             <Card className={'w-full'}>
-                <CardHeader className="text-5xl font-semibold mb-3 text-center">{header}</CardHeader>
+                <CardHeader className="text-5xl font-semibold mb-3 text-center"><p className={'text-2xl pb-4'}>Get specialized solutions built to fit your exact software needs.</p> <br/>{header}</CardHeader>
             </Card>
         </motion.div>
     }

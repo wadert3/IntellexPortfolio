@@ -26,7 +26,7 @@ export default function Home() {
         <main className="flex min-h-screen flex-col items-center px-[10%]">
             <div className="flex h-screen flex-col items-center justify-evenly">
                 <Header heading={"Tired of software that doesnt suit your needs?"}
-                             content={<Button className={"text-4xl p-12"} onClick={() => setOpen(true)}>Get Started
+                             content={<Button className={"text-4xl py-12 sm:p-12"} onClick={() => setOpen(true)}>Get Started
                                  Now</Button>}/>
                 <motion.div
                     initial={{opacity: 0, height: 0}}
@@ -46,19 +46,19 @@ export default function Home() {
                     <AnimatedBox header={"Across Industries..."}
                                  description={"Solutions in e-commerce, internal management, and any kind of AI solution you can imagine. If you have an issue I've got you covered."}/>
                 </div>
-                <div className="w-full flex py-12">
+                <div className="w-full flex pt-12">
                     <AnimatedBox header={"Seamlessly Integrated."}
                                  description={"Seamless implementation with existing systems and software. We build in the latest technologies to keep you ahead of the competition."}/>
                 </div>
             </div>
             <div className="mb-24">
-                <Button className={"text-4xl p-12"} onClick={() => setOpen(true)}>Get Started Now</Button>
+                <Button className={"text-4xl py-12 sm:p-12"} onClick={() => setOpen(true)}>Get Started Now</Button>
             </div>
-            <div className={'w-full ml-48 mb-8'}>
+            <div className={'w-full sm:ml-48 mb-8'}>
                 <p className={"text-gray-500 w-full"}>Built By Intallex LLC.</p>
             </div>
             <Dialog open={open} onOpenChange={setOpen}>
-                <DialogContent>
+                <DialogContent className="max-h-screen overflow-y-scroll">
                     <DialogHeader>
                         <DialogTitle>Get Started</DialogTitle>
                         <DialogDescription>Level Up Your Systems Today</DialogDescription>
