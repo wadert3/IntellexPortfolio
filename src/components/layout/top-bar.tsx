@@ -22,7 +22,7 @@ export default function TopBar(){
                 <div><MenuDropdown setOpen={setOpen}/></div>
             </div>
             <Dialog open={open} onOpenChange={setOpen}>
-                <DialogContent>
+                <DialogContent className={"max-h-screen overflow-y-scroll"}>
                     <DialogHeader>
                         <DialogTitle>Get Started</DialogTitle>
                         <DialogDescription>Level Up Your Systems Today</DialogDescription>
