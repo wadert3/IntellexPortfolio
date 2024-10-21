@@ -1,22 +1,22 @@
 "use client"
 import {
     AnimatedBox,
-    Button, Card, CardContent, CardTitle, ContactForm,
+    Button, ContactForm,
     Dialog,
     DialogContent,
-    DialogDescription, DialogFooter,
+    DialogDescription,
     DialogHeader,
     DialogTitle,
     Header
 } from "@/components"
-import {ReactNode, useState} from "react";
+import {useState} from "react";
 import {DialogBody} from "next/dist/client/components/react-dev-overlay/internal/components/Dialog";
 
-import {motion, Variants} from "framer-motion";
+import {motion} from "framer-motion";
 
-function CardHeader(props: { className: string, children: ReactNode }) {
-    return null;
-}
+// function CardHeader(props: { className: string, children: ReactNode }) {
+//     return null;
+// }
 
 export default function Home() {
     const [open, setOpen] = useState(false);
@@ -35,16 +35,16 @@ export default function Home() {
             </div>
             <div className={' w-full flex flex-col items-center justify-evenly pb-48'}>
                 <div className="w-full pb-12">
-                    <AnimatedBox header={"I Can Offer..."}
+                    <AnimatedBox header={"We Can Offer..."}
                                  description={""} fullWidth/>
                 </div>
                 <div className="w-full flex py-12">
                     <AnimatedBox header={"Tailored Solutions..."}
-                                 description={"Providing custom-built software to fit your exact needs. Streamline your unique business process and solve unconventional problems. I make sure its Effective, Efficient and Scalable."}/>
+                                 description={"Providing custom-built software to fit your exact needs. Streamline your unique business process and solve unconventional problems. Its built to be Effective, Efficient and Scalable."}/>
                 </div>
                 <div className="w-full flex py-12 justify-end">
                     <AnimatedBox header={"Across Industries..."}
-                                 description={"Solutions in e-commerce, internal management, and any kind of AI solution you can imagine. If you have an issue I've got you covered."}/>
+                                 description={"Solutions in e-commerce, internal management, and any kind of AI solution you can imagine. If you have an issue we've got you covered."}/>
                 </div>
                 <div className="w-full flex pt-12">
                     <AnimatedBox header={"Seamlessly Integrated."}
