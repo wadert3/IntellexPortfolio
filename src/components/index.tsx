@@ -37,3 +37,4 @@ export {
     DialogDescription,
 } from '@/components/ui/dialog'
 export {ContactForm} from '@/components/functional/contact-form'
+export {default as ContactFormPopup} from '@/components/functional/contact-form-popup'

@@ -36,7 +36,11 @@ export default function MenuDropdown({setOpen}: props) {
                     <DropdownMenuItem onClick={() => setOpen(true)}>
                         Get In Touch
                     </DropdownMenuItem>
-
+                    <DropdownMenuItem>
+                        <Link href={"/custom-crm"}>
+                            Custom Built CRM
+                        </Link>
+                    </DropdownMenuItem>
                         <DropdownMenuSub>
                             <DropdownMenuSubTrigger className="sm:hidden">
                                 Contact

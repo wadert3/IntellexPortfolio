@@ -8,7 +8,6 @@ export async function addSubmission(formDataRaw: FormData):Promise<{success: boo
     const {data, success} = validationSchema.safeParse(formDataParse);
     try {
         if (success) {
-            console.log(data);
             await db
                 .insertInto('form_submissions')
                 .values({
@@ -16,8 +15,6 @@ export async function addSubmission(formDataRaw: FormData):Promise<{success: boo
                     last_name: data.last_name,
                     email: data.email,
                     phone: data.phone,
-                    company_name: data.company_name,
-                    company_site: data.company_site,
                     availability: data.availability,
                     lead: data.lead,
                     message: data.message,

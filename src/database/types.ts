@@ -11,9 +11,7 @@ export interface FormSubmissionsTable {
     email: string;
     phone?: string;
     created_at?: Date;
-    company_name: string;
     job_title?: string;
-    company_site?: string;
     lead: string;
     availability: string;
     message: string;

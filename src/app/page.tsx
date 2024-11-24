@@ -1,7 +1,7 @@
 "use client"
 import {
     AnimatedBox,
-    Button, ContactForm,
+    Button, ContactForm, ContactFormPopup,
     Dialog,
     DialogContent,
     DialogDescription,
@@ -19,15 +19,13 @@ import {motion} from "framer-motion";
 // }
 
 export default function Home() {
-    const [open, setOpen] = useState(false);
-    const [openThankYou, setOpenThankYou] = useState(false);
 
+    const [open, setOpen] = useState(false);
     return (
         <main className="flex min-h-screen flex-col items-center px-[10%]">
             <div className="flex h-screen flex-col items-center justify-evenly">
-                <Header heading={"Tired of software that doesnt suit your needs?"}
-                             content={<Button className={"text-4xl py-12 sm:p-12"} onClick={() => setOpen(true)}>Get Started
-                                 Now</Button>}/>
+                <Header heading={"Get the Edge on AI In Your Business"}
+                        content={<Button className={"text-4xl whitespace-normal py-12 sm:p-12 mt-12"} onClick={() => setOpen(true)}>Book Free Consultation</Button>}/>
                 <motion.div
                     initial={{opacity: 0, height: 0}}
                     animate={{opacity: 1, height: 200}}
@@ -51,35 +49,13 @@ export default function Home() {
                                  description={"Seamless implementation with existing systems and software. We build in the latest technologies to keep you ahead of the competition."}/>
                 </div>
             </div>
-            <div className="mb-24">
-                <Button className={"text-4xl py-12 sm:p-12"} onClick={() => setOpen(true)}>Get Started Now</Button>
+            <div className="mb-24 w-full flex justify-center">
+                <Button className={"mx-auto text-4xl max-w-full py-12 sm:p-12 whitespace-normal text-wrap"} onClick={() => setOpen(true)}>Book Free Consultation</Button>
             </div>
             <div className={'w-full sm:ml-48 mb-8'}>
                 <p className={"text-gray-500 w-full"}>Built By Intallex LLC.</p>
             </div>
-            <Dialog open={open} onOpenChange={setOpen}>
-                <DialogContent className="max-h-screen overflow-y-scroll">
-                    <DialogHeader>
-                        <DialogTitle>Get Started</DialogTitle>
-                        <DialogDescription>Level Up Your Systems Today</DialogDescription>
-                    </DialogHeader>
-                    <ContactForm onSuccess={() => {
-                        setOpenThankYou(true);
-                        setOpen(false)
-                    }}/>
-                </DialogContent>
-            </Dialog>
-
-            <Dialog open={openThankYou} onOpenChange={setOpenThankYou}>
-                <DialogContent>
-                    <DialogHeader>
-                        <DialogTitle>Thanks for reaching out!</DialogTitle>
-                    </DialogHeader>
-                    <DialogBody>
-                        We&quot;ll be contacting you shortly.
-                    </DialogBody>
-                </DialogContent>
-            </Dialog>
+            <ContactFormPopup open={open} setOpen={setOpen}/>
         </main>
     );
 }
