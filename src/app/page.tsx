@@ -1,7 +1,7 @@
 "use client"
 import {
     AnimatedBox,
-    Button, ContactForm, ContactFormPopup,
+    Button, ContactForm, ContactFormPopup, CRMPromoBlock,
     Dialog,
     DialogContent,
     DialogDescription,
@@ -31,7 +31,7 @@ export default function Home() {
                     animate={{opacity: 1, height: 200}}
                     className={'w-1/2 border-r-2 border-white h-[200px] mr-auto'}></motion.div>
             </div>
-            <div className={' w-full flex flex-col items-center justify-evenly pb-48'}>
+            <div className={' w-full flex flex-col items-center justify-evenly pb-24'}>
                 <div className="w-full pb-12">
                     <AnimatedBox header={"We Can Offer..."}
                                  description={""} fullWidth/>
@@ -48,6 +48,9 @@ export default function Home() {
                     <AnimatedBox header={"Seamlessly Integrated."}
                                  description={"Seamless implementation with existing systems and software. We build in the latest technologies to keep you ahead of the competition."}/>
                 </div>
+            </div>
+            <div className="pb-48">
+                <CRMPromoBlock/>
             </div>
             <div className="mb-24 w-full flex justify-center">
                 <Button className={"mx-auto text-4xl max-w-full py-12 sm:p-12 whitespace-normal text-wrap"} onClick={() => setOpen(true)}>Book Free Consultation</Button>

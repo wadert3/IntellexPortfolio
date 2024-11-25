@@ -38,3 +38,4 @@ export {
 } from '@/components/ui/dialog'
 export {ContactForm} from '@/components/functional/contact-form'
 export {default as ContactFormPopup} from '@/components/functional/contact-form-popup'
+export {default as CRMPromoBlock} from '@/components/functional/crm-promo-block'
