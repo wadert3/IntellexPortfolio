@@ -3,6 +3,9 @@ import {Inter} from "next/font/google";
 import "./globals.css";
 import {ThemeProvider} from "@/components/global/ThemeProvider/";
 import {TopBar} from "@/components";
+import React from "react";
+
+import {GoogleAnalytics} from "@next/third-parties/google";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -23,6 +26,7 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
                 {children}
         </ThemeProvider>
         </body>
+        <GoogleAnalytics gaId={"G-LS175TEW83"}/>
         </html>
     );
 }
