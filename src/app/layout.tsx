@@ -19,7 +19,7 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
         <html lang="en">
         <body className={`${inter.className}`}>
         <ThemeProvider attribute="class"
-                       defaultTheme="system"
+                       defaultTheme="dark"
                        enableSystem
                        disableTransitionOnChange>
             <TopBar/>
