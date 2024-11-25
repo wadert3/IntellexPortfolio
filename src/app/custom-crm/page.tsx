@@ -14,7 +14,7 @@ export default function CustomCRM() {
                     heading={'Finally, a CRM That Adapts to You'}
                     alignment={'center'}
                     className={'mt-auto h-screen justify-center'}>
-                <div>
+                <div className={"flex flex-col items-center"}>
                     <p className={'text-xl sm:text-3xl text-center font-bold text-slate-500 mt-12'}>Take control of your sales
                         process
                         with a

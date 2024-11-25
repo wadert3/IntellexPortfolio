@@ -22,11 +22,11 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
                        defaultTheme="system"
                        enableSystem
                        disableTransitionOnChange>
-            <TopBar />
-                {children}
+            <TopBar/>
+            {children}
         </ThemeProvider>
-        </body>
         <GoogleAnalytics gaId={"G-LS175TEW83"}/>
+        </body>
         </html>
     );
 }
